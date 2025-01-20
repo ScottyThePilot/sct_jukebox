@@ -1,0 +1,15 @@
+name = "Music Player"
+author = "ScottyThePilot"
+prefix = "sct_jukebox"
+mainprefix = "x"
+
+[version]
+git_hash = 0
+
+[files]
+exclude = [
+  "**/ace_actions_jukebox_vehicle.hpp",
+  "**/ace_actions_jukebox.hpp",
+  "**/CfgVehicles.hpp",
+  "**/CfgWeapons.hpp",
+]

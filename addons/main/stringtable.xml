@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="sct_jukebox">
+  <Package name="main">
+    <Key ID="STR_sct_jukebox_editorCategory_jukeboxes">
+      <Original>Music Players</Original>
+      <English>Music Players</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_displayName">
+      <Original>Portable Music Player</Original>
+      <English>Portable Music Player</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_descriptionShort">
+      <Original>A portable device capable of playing music</Original>
+      <English>A portable device capable of playing music</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_category">
+      <Original>Music Player</Original>
+      <English>Music Player</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_soundDistance_name">
+      <Original>Sound Distance</Original>
+      <English>Sound Distance</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_soundDistance_description">
+      <Original>The default sound range of all music players, globally</Original>
+      <English>The default sound range of all music players, globally</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_notificationDistance_name">
+      <Original>Notification Distance</Original>
+      <English>Notification Distance</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_notificationDistance_description">
+      <Original>The default distance around which players get notifications from music players</Original>
+      <English>The default distance around which players get notifications from music players</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_localMute_name">
+      <Original>Mute Locally</Original>
+      <English>Mute Locally</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_localMute_description">
+      <Original>Mutes all Music Players for only you (This will only apply to tracks played after this setting has been changed)</Original>
+      <English>Mutes all Music Players for only you (This will only apply to tracks played after this setting has been changed)</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_place">
+      <Original>Place Portable Music Player</Original>
+      <English>Place Portable Music Player</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_pickup">
+      <Original>Pick up Portable Music Player</Original>
+      <English>Pick up Portable Music Player</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_vehicle_install">
+      <Original>Install Portable Music Player</Original>
+      <English>Install Portable Music Player</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_vehicle_uninstall">
+      <Original>Uninstall Portable Music Player</Original>
+      <English>Uninstall Portable Music Player</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_play">
+      <Original>Play Track</Original>
+      <English>Play Track</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_stop">
+      <Original>Stop Track</Original>
+      <English>Stop Track</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_skip">
+      <Original>Skip Track</Original>
+      <English>Skip Track</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_queue_show">
+      <Original>Show Queue</Original>
+      <English>Show Queue</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_queue_shuffle">
+      <Original>Shuffle Queue</Original>
+      <English>Shuffle Queue</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_queue_clear">
+      <Original>Clear Queue</Original>
+      <English>Clear Queue</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_queue_item">
+      <!--
+      The name of track item interactions shown in the queue list
+      * %1: Numeric index of the track
+      * %2: Name of the track
+      -->
+      <Original>#%1: %2</Original>
+      <English>#%1: %2</English>
+    </Key>
+    <!-- The name of the skip action, under a track item interaction -->
+    <Key ID="STR_sct_jukebox_interaction_queue_item_skip">
+      <Original>Skip</Original>
+      <English>Skip</English>
+    </Key>
+    <!-- The name of the play action, under a track item interaction -->
+    <Key ID="STR_sct_jukebox_interaction_queue_item_play">
+      <Original>Play</Original>
+      <English>Play</English>
+    </Key>
+    <!-- The name of the remove action, under a track item interaction -->
+    <Key ID="STR_sct_jukebox_interaction_queue_item_remove">
+      <Original>Remove</Original>
+      <English>Remove</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_repeat_enable">
+      <Original>Enable Repeat</Original>
+      <English>Enable Repeat</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_repeat_disable">
+      <Original>Disable Repeat</Original>
+      <English>Disable Repeat</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_sound_missingDisplayName">
+      <Original>(Unnamed Sound)</Original>
+      <English>(Unnamed Sound)</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_interaction_sound_invalid">
+      <Original>(Invalid Sound)</Original>
+      <English>(Invalid Sound)</English>
+    </Key>
+    <!-- Notification shown when installing a music player -->
+    <Key ID="STR_sct_jukebox_message_vehicle_installed">
+      <Original>Installed Portable Music Player</Original>
+      <English>Installed Portable Music Player</English>
+    </Key>
+    <!-- Notification shown when uninstalling a music player -->
+    <Key ID="STR_sct_jukebox_message_vehicle_uninstalled">
+      <Original>Uninstalled Portable Music Player</Original>
+      <English>Uninstalled Portable Music Player</English>
+    </Key>
+    <!-- Notification shown to anyone when a track begins playing -->
+    <Key ID="STR_sct_jukebox_message_playing">
+      <!--
+      * %1: The track being played
+      -->
+      <Original>Now playing '%1'</Original>
+      <English>Now playing '%1'</English>
+    </Key>
+    <!-- Notification shown when the music player is stopped -->
+    <Key ID="STR_sct_jukebox_message_stopped">
+      <Original>Stopped Music Player</Original>
+      <English>Stopped Music Player</English>
+    </Key>
+    <!-- Notification shown when a track is skipped -->
+    <Key ID="STR_sct_jukebox_message_skipped">
+      <!--
+      * %1: The track being skipped
+      -->
+      <Original>Skipped '%1' in the queue</Original>
+      <English>Skipped '%1' in the queue</English>
+    </Key>
+    <!-- Notification shown when a track is removed -->
+    <Key ID="STR_sct_jukebox_message_removed">
+      <!--
+      * %1: The track being skipped
+      -->
+      <Original>Removed '%1' from the queue</Original>
+      <English>Removed '%1' from the queue</English>
+    </Key>
+    <!-- Notification shown when a track is added to the queue -->
+    <Key ID="STR_sct_jukebox_message_queued">
+      <!--
+      * %1: The track being added to the queue
+      -->
+      <Original>Added '%1' to Music Player queue</Original>
+      <English>Added '%1' to Music Player queue</English>
+    </Key>
+    <!-- Notification shown when the queue is shuffled -->
+    <Key ID="STR_sct_jukebox_message_queue_shuffled">
+      <Original>Shuffled Music Player queue</Original>
+      <English>Shuffled Music Player queue</English>
+    </Key>
+    <!-- Notification shown when the queue is cleared -->
+    <Key ID="STR_sct_jukebox_message_queue_cleared">
+      <Original>Cleared Music Player queue</Original>
+      <English>Cleared Music Player queue</English>
+    </Key>
+    <!-- Notification shown when the queue repeat option is enabled -->
+    <Key ID="STR_sct_jukebox_message_repeat_enabled">
+      <Original>Enabled Music Player queue repetition</Original>
+      <English>Enabled Music Player queue repetition</English>
+    </Key>
+    <!-- Notification shown when the queue repeat option is disabled -->
+    <Key ID="STR_sct_jukebox_message_repeat_disabled">
+      <Original>Disabled Music Player queue repetition</Original>
+      <English>Disabled Music Player queue repetition</English>
+    </Key>
+  </Package>
+</Project>
