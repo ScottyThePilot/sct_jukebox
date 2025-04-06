@@ -1,8 +1,5 @@
 #include "..\script_component.hpp"
 
-systemChat format ["objectStopSound: %1", [_this] call FUNC(inspect)];
-[FUNC(debugObjectState), _object] call CBA_fnc_execNextFrame;
-
 // Stops the sound being played by an object that was started with `sct_jukebox_main_fnc_objectStartSound`.
 // Raises event `sct_jukebox_main_objectSoundEnd` if the sound was successfully cancelled.
 // - Args: [_target: Object]

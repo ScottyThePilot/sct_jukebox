@@ -2,9 +2,6 @@
 
 params ["_object", "_player"];
 
-systemChat format ["onQueueShuffle: %1", [_this] call FUNC(inspect)];
-[FUNC(debugObjectState), _object] call CBA_fnc_execNextFrame;
-
 private _queueList = GET_QUEUE_LIST(_object);
 if (_queueList isEqualTo []) exitWith {};
 

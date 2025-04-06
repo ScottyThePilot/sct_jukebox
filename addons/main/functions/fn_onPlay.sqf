@@ -2,9 +2,6 @@
 
 params ["_object", "_player", "_track"];
 
-systemChat format ["onPlay: %1", [_this] call FUNC(inspect)];
-[FUNC(debugObjectState), _object] call CBA_fnc_execNextFrame;
-
 private _queueList = GET_QUEUE_LIST(_object);
 if (isNil "_track" && _queueList isEqualTo []) exitWith {};
 

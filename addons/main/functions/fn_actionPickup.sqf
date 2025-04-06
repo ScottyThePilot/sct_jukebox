@@ -1,7 +1,5 @@
 #include "..\script_component.hpp"
 
-systemChat format ["actionPickup: %1", [_this] call FUNC(inspect)];
-
 params ["_object", "_player"];
 
 if ((_player call CBA_fnc_getUnitAnim) select 0 == "stand") then {

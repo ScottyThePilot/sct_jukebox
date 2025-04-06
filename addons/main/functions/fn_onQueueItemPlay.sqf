@@ -2,9 +2,6 @@
 
 params ["_object", "_player", "_trackIndex"];
 
-systemChat format ["onQueueItemPlay: %1", [_this] call FUNC(inspect)];
-[FUNC(debugObjectState), _object] call CBA_fnc_execNextFrame;
-
 if (_trackIndex isEqualTo 0) exitWith {};
 
 private _queueList = GET_QUEUE_LIST(_object);

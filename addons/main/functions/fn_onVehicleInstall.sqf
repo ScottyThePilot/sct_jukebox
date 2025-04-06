@@ -1,7 +1,5 @@
 #include "..\script_component.hpp"
 
-systemChat format ["onVehicleInstall: %1", [_this] call FUNC(inspect)];
-
 params ["_object", "_player"];
 
 _player removeItem QCLASS_JUKEBOX_ITEM;

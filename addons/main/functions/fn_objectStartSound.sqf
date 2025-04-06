@@ -1,8 +1,5 @@
 #include "..\script_component.hpp"
 
-systemChat format ["objectStartSound: %1", [_this] call FUNC(inspect)];
-[FUNC(debugObjectState), _object] call CBA_fnc_execNextFrame;
-
 // Starts playing a sound from the given object on the local machine.
 // If the object is already playing a sound, it will cancel the current one.
 // Raises CBA event `sct_jukebox_main_objectSoundEnd` when the sound ends.
@@ -51,8 +48,6 @@ SET_SOUND_SOURCE(_speakerProxy,_soundSource);
   isNull _target || isNull _speakerProxy || isNull _soundSource
 }, {
   params ["_target", "_speakerProxy", "_soundSource", "_eventHandlerId", "_args"];
-
-  systemChat "sound source disposed";
 
   // Remove the deleted event handler we registered earlier
   _target removeEventHandler ["Deleted", _eventHandlerId];

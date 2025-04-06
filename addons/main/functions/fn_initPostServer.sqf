@@ -1,8 +1,6 @@
 #include "..\script_component.hpp"
 
 [QGVAR(objectSoundEnd), {
-  systemChat format ["objectSoundEnd: %1", [_this] call FUNC(inspect)];
-
   params ["_target", "_cancelled", "_args"];
   if (!_cancelled && { _target isKindOf QCLASS_JUKEBOX_OBJECT || HAS_SPEAKER(_target) }) then {
     [_target, objNull] call FUNC(onSkip);

@@ -1,7 +1,5 @@
 #include "..\script_component.hpp"
 
-systemChat format ["objectStopSoundRemote: %1", [_this] call FUNC(inspect)];
-
 params ["_target", "_executionTarget"];
 
 if (isNil "_executionTarget") then {

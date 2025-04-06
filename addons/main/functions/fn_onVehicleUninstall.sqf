@@ -1,7 +1,5 @@
 #include "..\script_component.hpp"
 
-systemChat format ["onVehicleUninstall: %1", [_this] call FUNC(inspect)];
-
 params ["_object", "_player"];
 
 [_player, QCLASS_JUKEBOX_ITEM] call ace_common_fnc_addToInventory;
