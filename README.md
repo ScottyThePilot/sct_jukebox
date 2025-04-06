@@ -18,6 +18,11 @@ By ACE interacting with the music player, the vehicle/unit it is attached to, or
 a vehicle with a music player installed, a 'Music Player' interaction will
 appear, with controls for manipulating the music player state.
 
+## Known Issues
+
+- If a track is started while local mute is enabled, and then subsequently disabled,
+  the track will not be un-muted. At this time, I don't know why this happens.
+
 ## Adding Custom Tracks
 
 Tracks played through the music player are 'sounds' (as defined in `CfgSounds`) not
@@ -29,10 +34,27 @@ config (campaign `Description.ext`) or mission config (mission `Description.ext`
 
 ```cpp
 class sct_jukebox_categories {
-
+  // The category identifier (i.e. `my_custom_category`) can be anything, or it can be the
+  // identifier of an existing category, to add additional tracks to it, or replace the tracks in it
+  class my_custom_category {
+    displayName = "Custom Music";
+    tracks[] = {
+      // This must match the identifier of the sound as defined in CfgSounds
+      "my_custom_sound"
+    };
+    // Uncomment the below line of code to overwrite the contents of a track list defined in an addon. Optional.
+    //replace = 1;
+  };
 };
 
+// See https://community.bistudio.com/wiki/Description.ext#CfgSounds
+// for more information on how to do this.
 class CfgSounds {
-
+  // The sound identifier (i.e. `my_custom_sound`) can be anything.
+  class my_custom_sound {
+    name = "My Custom Sound Name";
+    sound[] = { "path_to\my_custom_sound.ogg", 1, 1 };
+    titles[] = {};
+  };
 };
 ```
