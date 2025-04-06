@@ -23,3 +23,16 @@
   [0, 100, 5, 2, false],
   2
 ] call CBA_fnc_addSetting;
+
+[
+  QVAR_LOCAL_MUTE,
+  "CHECKBOX",
+  [
+    "STR_sct_jukebox_settings_localMute_name",
+    "STR_sct_jukebox_settings_localMute_description"
+  ],
+  "STR_sct_jukebox_settings_category",
+  false,
+  2,
+  FUNC(objectUpdateAllSounds)
+] call CBA_fnc_addSetting;

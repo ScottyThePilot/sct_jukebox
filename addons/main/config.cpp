@@ -61,6 +61,7 @@ class CfgFunctions {
       class objectStartSoundRemote {};
       class objectStopSound {};
       class objectStopSoundRemote {};
+      class objectUpdateAllSounds {};
       class onPlay {};
       class onQueueClear {};
       class onQueueItemPlay {};

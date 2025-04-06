@@ -1,3 +1,9 @@
+class Static;
+class CLASS_SPEAKER_PROXY: Static {
+  displayName = "";
+  scope = 1;
+};
+
 class LandVehicle;
 class Air;
 class Ship;

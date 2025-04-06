@@ -38,8 +38,8 @@
       <English>Mute Locally</English>
     </Key>
     <Key ID="STR_sct_jukebox_settings_localMute_description">
-      <Original>Mutes all Music Players for only you (This will only apply to tracks played after this setting has been changed)</Original>
-      <English>Mutes all Music Players for only you (This will only apply to tracks played after this setting has been changed)</English>
+      <Original>Mutes all Music Players for only you</Original>
+      <English>Mutes all Music Players for only you</English>
     </Key>
     <Key ID="STR_sct_jukebox_interaction_place">
       <Original>Place Portable Music Player</Original>

@@ -6,9 +6,9 @@ systemChat format ["onPlay: %1", [_this] call FUNC(inspect)];
 [FUNC(debugObjectState), _object] call CBA_fnc_execNextFrame;
 
 private _queueList = GET_QUEUE_LIST(_object);
-if (isNil "_track") then {
-  if (_queueList isEqualTo []) exitWith {};
-} else {
+if (isNil "_track" && _queueList isEqualTo []) exitWith {};
+
+if (!isNil "_track") then {
   _queueList pushBack _track;
   SET_QUEUE_LIST(_object,_queueList);
 };
@@ -25,8 +25,10 @@ if (!IS_PLAYING(_object)) then {
     _nextTrack call FUNC(getSoundNameRaw)
   ], _object] call FUNC(notifyRemote);
 } else {
-  [[
-    "$STR_sct_jukebox_message_queued",
-    _track call FUNC(getSoundNameRaw)
-  ], _object] call FUNC(notifyRemote);
+  if (!isNil "_track") then {
+    [[
+      "$STR_sct_jukebox_message_queued",
+      _track call FUNC(getSoundNameRaw)
+    ], _object] call FUNC(notifyRemote);
+  };
 };
