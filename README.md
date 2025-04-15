@@ -1,5 +1,9 @@
 # Music Player
 
+<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3464242640">
+  <img src="https://img.shields.io/endpoint?color=%232a475e%20&url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F3464242640%2Fsubscriptions-text">
+</a>
+
 Portable music player for Arma 3, inspired by [Pocket Music Player by Hubix](https://steamcommunity.com/sharedfiles/filedetails/?id=2170268960).
 
 ## Usage

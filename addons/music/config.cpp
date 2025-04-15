@@ -5,7 +5,7 @@ class CfgPatches {
     name = ADDON_NAME;
     author = "ScottyThePilot";
     authors[] = { "ScottyThePilot" };
-    //url = "https://steamcommunity.com/sharedfiles/filedetails/?id=";
+    url = "https://steamcommunity.com/sharedfiles/filedetails/?id=3464242640";
     VERSION_CONFIG;
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
