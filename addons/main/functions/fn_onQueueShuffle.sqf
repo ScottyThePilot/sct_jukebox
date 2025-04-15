@@ -14,4 +14,4 @@ if (IS_PLAYING(_object)) then {
   SET_QUEUE_LIST(_object,_queueListNew);
 };
 
-["$STR_sct_jukebox_message_queue_shuffled", _object, _player] call FUNC(notifyRemote);
+[RCSTRING(message_queue_shuffled), _object, _player] call FUNC(notifyRemote);

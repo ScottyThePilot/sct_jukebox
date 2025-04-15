@@ -7,6 +7,9 @@ private _tracksMap = createHashMap;
     private _categoryName = configName _x;
     if (!isText (_x >> "displayName")) then { continue };
     if (!isArray (_x >> "tracks")) then { continue };
+    if (isText (_x >> "condition") && {
+      !([] call compileFinal getTextRaw (_x >> "condition"))
+    }) then { continue };
 
     private _entry = _tracksMap getOrDefaultCall [_categoryName, { [nil, []] }, true];
 

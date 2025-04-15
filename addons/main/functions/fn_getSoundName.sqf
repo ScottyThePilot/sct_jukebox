@@ -14,8 +14,8 @@ if (_index isNotEqualTo -1) then {
   if (isText (_soundConfig >> "name")) then {
     getText (_soundConfig >> "name")
   } else {
-    localize "$STR_sct_jukebox_interaction_sound_missingDisplayName"
+    localize RCSTRING(interaction_sound_missingDisplayName)
   }
 } else {
-  localize "$STR_sct_jukebox_interaction_sound_invalid"
+  localize RCSTRING(interaction_sound_invalid)
 }

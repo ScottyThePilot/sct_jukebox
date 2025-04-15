@@ -27,7 +27,12 @@ class CfgSettings {
   class CBA {
     class Versioning {
       class ADDON {
-        main_addon = QUOTE(ADDON_MAIN);
+        main_addon = QADDON_MAIN;
+
+        class dependencies {
+          CBA[] = { "cba_main", { 3, 18, 0 }, "(true)" };
+          ACE[] = { "ace_main", { 3, 18, 0 }, "(true)" };
+        };
       };
     };
   };
@@ -99,7 +104,7 @@ class CfgVehicles {
 
 class CfgEditorSubcategories {
   class sct_jukeboxes {
-    displayName = "$STR_sct_jukebox_editorCategory_jukeboxes";
+    displayName = RCSTRING(editorCategory_jukeboxes);
   };
 };
 

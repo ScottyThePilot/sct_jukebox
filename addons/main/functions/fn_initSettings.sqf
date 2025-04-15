@@ -4,22 +4,22 @@
   QVAR_SOUND_DISTANCE,
   "SLIDER",
   [
-    "STR_sct_jukebox_settings_soundDistance_name",
-    "STR_sct_jukebox_settings_soundDistance_description"
+    RLSTRING(settings_soundDistance_name),
+    RLSTRING(settings_soundDistance_description)
   ],
-  "STR_sct_jukebox_settings_category",
+  RLSTRING(settings_category),
   [0, 500, 100, 2, false],
-  1
+  0
 ] call CBA_fnc_addSetting;
 
 [
   QVAR_NOTIFICATION_DISTANCE,
   "SLIDER",
   [
-    "STR_sct_jukebox_settings_notificationDistance_name",
-    "STR_sct_jukebox_settings_notificationDistance_description"
+    RLSTRING(settings_notificationDistance_name),
+    RLSTRING(settings_notificationDistance_description)
   ],
-  "STR_sct_jukebox_settings_category",
+  RLSTRING(settings_category),
   [0, 100, 5, 2, false],
   2
 ] call CBA_fnc_addSetting;
@@ -28,11 +28,29 @@
   QVAR_LOCAL_MUTE,
   "CHECKBOX",
   [
-    "STR_sct_jukebox_settings_localMute_name",
-    "STR_sct_jukebox_settings_localMute_description"
+    RLSTRING(settings_localMute_name),
+    RLSTRING(settings_localMute_description)
   ],
-  "STR_sct_jukebox_settings_category",
+  RLSTRING(settings_category),
   false,
   2,
   FUNC(objectUpdateAllSounds)
 ] call CBA_fnc_addSetting;
+
+if (isClass (configFile >> "CfgPatches" >> QADDONOF(music))) then {
+  [
+    QVAR_ENABLE_BASEGAME_MUSIC,
+    "CHECKBOX",
+    [
+      RLSTRING(settings_enableBaseGameMusic_name),
+      RLSTRING(settings_enableBaseGameMusic_description)
+    ],
+    RLSTRING(settings_category),
+    true,
+    1,
+    {
+      RESET_TRACK_CATEGORIES;
+      RESET_TRACKS_MAP;
+    }
+  ] call CBA_fnc_addSetting;
+};

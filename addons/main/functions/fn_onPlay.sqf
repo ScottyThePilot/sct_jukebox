@@ -18,13 +18,13 @@ if (!IS_PLAYING(_object)) then {
   SET_PLAYING(_object,true);
 
   [[
-    "$STR_sct_jukebox_message_playing",
+    RCSTRING(message_playing),
     _nextTrack call FUNC(getSoundNameRaw)
   ], _object] call FUNC(notifyRemote);
 } else {
   if (!isNil "_track") then {
     [[
-      "$STR_sct_jukebox_message_queued",
+      RCSTRING(message_queued),
       _track call FUNC(getSoundNameRaw)
     ], _object] call FUNC(notifyRemote);
   };

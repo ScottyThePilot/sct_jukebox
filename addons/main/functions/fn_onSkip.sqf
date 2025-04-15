@@ -27,7 +27,7 @@ SET_QUEUE_LIST(_object,_queueList);
 // Null player means that the skip was normal queue progression
 if (!isNull _player) then {
   [[
-    "$STR_sct_jukebox_message_skipped",
+    RCSTRING(message_skipped),
     _previousTrack call FUNC(getSoundNameRaw)
   ], _object] call FUNC(notifyRemote);
 };

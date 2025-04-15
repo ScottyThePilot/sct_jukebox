@@ -13,7 +13,7 @@ if (_trackIndex isEqualTo 0) then {
   SET_QUEUE_LIST(_object,_queueList);
 
   [[
-    "$STR_sct_jukebox_message_removed",
+    RCSTRING(message_removed),
     _track call FUNC(getSoundNameRaw)
   ], _object, _player] call FUNC(notifyRemote);
 };

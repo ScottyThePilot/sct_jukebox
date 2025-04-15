@@ -22,6 +22,6 @@ SET_QUEUE_LIST(_object,_queueList);
 SET_PLAYING(_object,true);
 
 [[
-  "$STR_sct_jukebox_message_playing",
+  RCSTRING(message_playing),
   _nextTrack call FUNC(getSoundNameRaw)
 ], _object] call FUNC(notifyRemote);

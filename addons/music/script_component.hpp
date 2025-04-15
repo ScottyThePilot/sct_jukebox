@@ -1,7 +1,7 @@
 #include "\x\sct_jukebox\addons\main\script_prefix.hpp"
 
-#define COMPONENT main
-#define COMPONENT_BEAUTIFIED Main
+#define COMPONENT music
+#define COMPONENT_BEAUTIFIED Base-Game Music
 
 #include "\x\sct_jukebox\addons\main\script_version.hpp"
 #include "\x\sct_jukebox\addons\main\script_macros.hpp"

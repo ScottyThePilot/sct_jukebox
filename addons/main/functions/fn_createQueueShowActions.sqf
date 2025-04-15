@@ -5,7 +5,7 @@ params ["_target", "_player"];
 private _index = 0;
 GET_QUEUE_LIST(GET_SPEAKER(_target)) apply {
   private _soundName = _x call FUNC(getSoundName);
-  private _id = QGVAR_CORE(queue_item) + "_" + (str _index);
+  private _id = QRGVAR(queue_item) + "_" + (str _index);
 
   private _action = [
     _id,
@@ -20,7 +20,7 @@ GET_QUEUE_LIST(GET_SPEAKER(_target)) apply {
     private _actionChildSkip = [
       _id + "_skip",
       localize "STR_sct_jukebox_interaction_queue_item_skip",
-      QPATHTO(data\ui\icon_jukebox_skip.paa),
+      QPATHTO(data\ui\icon_jukebox_skip_ca.paa),
       {
         params ["_target", "_player", "_params"];
         EMIT_SERVER_EVENT_ARGS3(GVAR(skip),GET_SPEAKER(_target),_player,_params);
@@ -33,7 +33,7 @@ GET_QUEUE_LIST(GET_SPEAKER(_target)) apply {
     private _actionChildPlay = [
       _id + "_play",
       localize "STR_sct_jukebox_interaction_queue_item_play",
-      QPATHTO(data\ui\icon_jukebox_play.paa),
+      QPATHTO(data\ui\icon_jukebox_play_ca.paa),
       {
         params ["_target", "_player", "_params"];
         EMIT_SERVER_EVENT_ARGS3(GVAR(queueItemPlay),GET_SPEAKER(_target),_player,_params);
@@ -44,7 +44,7 @@ GET_QUEUE_LIST(GET_SPEAKER(_target)) apply {
     private _actionChildRemove = [
       _id + "_remove",
       localize "STR_sct_jukebox_interaction_queue_item_remove",
-      QPATHTO(data\ui\icon_jukebox_remove.paa),
+      QPATHTO(data\ui\icon_jukebox_remove_ca.paa),
       {
         params ["_target", "_player", "_params"];
         EMIT_SERVER_EVENT_ARGS3(GVAR(queueItemRemove),GET_SPEAKER(_target),_player,_params);

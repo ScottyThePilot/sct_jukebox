@@ -14,8 +14,8 @@ if (_index isNotEqualTo -1) then {
   if (isText (_soundConfig >> "name")) then {
     getTextRaw (_soundConfig >> "name")
   } else {
-    "$STR_sct_jukebox_interaction_sound_missingDisplayName"
+    RCSTRING(interaction_sound_missingDisplayName)
   }
 } else {
-  "$STR_sct_jukebox_interaction_sound_invalid"
+  RCSTRING(interaction_sound_invalid)
 }

@@ -14,7 +14,7 @@ _trackCategories select {
   private _categoryId = _x;
   (_tracksMap get _x) params ["_categoryName", "_tracks"];
 
-  private _id = QGVAR_CORE(play) + "_" + _categoryId;
+  private _id = QRGVAR(play) + "_" + _categoryId;
 
   private _action = [
     _id, _categoryName, "",

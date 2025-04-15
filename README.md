@@ -18,10 +18,16 @@ By ACE interacting with the music player, the vehicle/unit it is attached to, or
 a vehicle with a music player installed, a 'Music Player' interaction will
 appear, with controls for manipulating the music player state.
 
+In CBA settings, all music players may be muted for you locally.
+
 ## Known Issues
 
 - If a track is started while local mute is enabled, and then subsequently disabled,
   the track will not be un-muted. At this time, I don't know why this happens.
+- Currently, sounds are played on the server to know when to advance the Music Player
+  for all other players. This means that the Music Player will not work if the
+  sounds are not present on the server. I am currently working on a better way to
+  do this.
 
 ## Adding Custom Tracks
 

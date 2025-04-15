@@ -9,4 +9,4 @@ SET_REPEATING(_object,nil);
 SET_PLAYING(_object,nil);
 SET_QUEUE_LIST(_object,nil);
 
-["$STR_sct_jukebox_message_vehicle_uninstalled", _object, _player] call FUNC(notifyRemote);
+[RCSTRING(message_vehicle_uninstalled), _object, _player] call FUNC(notifyRemote);

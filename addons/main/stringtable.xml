@@ -41,6 +41,14 @@
       <Original>Mutes all Music Players for only you</Original>
       <English>Mutes all Music Players for only you</English>
     </Key>
+    <Key ID="STR_sct_jukebox_settings_enableBaseGameMusic_name">
+      <Original>Enable Base-Game Music</Original>
+      <English>Enable Base-Game Music</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_settings_enableBaseGameMusic_description">
+      <Original>Enables music categories for music included in Arma 3</Original>
+      <English>Enables music categories for music included in Arma 3</English>
+    </Key>
     <Key ID="STR_sct_jukebox_interaction_place">
       <Original>Place Portable Music Player</Original>
       <English>Place Portable Music Player</English>

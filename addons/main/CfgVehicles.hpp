@@ -33,18 +33,18 @@ class Man;
 class CAManBase: Man {
   class ACE_SelfActions {
     class ACE_Equipment {
-      class GVAR_CORE(place) {
-        displayName = "$STR_sct_jukebox_interaction_place";
+      class RGVAR(place) {
+        displayName = RCSTRING(interaction_place);
         condition = QUOTE(HAS_JUKEBOX_ITEM(_player));
         statement = QUOTE(CALL1(FUNC(actionPlace),_player));
-        icon = QPATHTO(data\ui\icon_jukebox.paa);
+        icon = QPATHTO(data\ui\icon_jukebox_ca.paa);
       };
 
-      class GVAR_CORE(personal) {
-        displayName = "$STR_sct_jukebox_displayName";
+      class RGVAR(personal) {
+        displayName = RCSTRING(displayName);
         condition = QUOTE(HAS_SPEAKER(_target));
         exceptions[] = { "isNotInside", "isNotSitting" };
-        icon = QPATHTO(data\ui\icon_jukebox.paa);
+        icon = QPATHTO(data\ui\icon_jukebox_ca.paa);
 
         #include "ace_actions_jukebox.hpp"
       };
@@ -55,7 +55,7 @@ class CAManBase: Man {
 class Land_FMradio_F;
 
 class CLASS_JUKEBOX_OBJECT: Land_FMradio_F {
-  displayName = "$STR_sct_jukebox_displayName";
+  displayName = RCSTRING(displayName);
   author = "ScottyThePilot";
   editorCategory = "EdCat_Things";
   editorSubcategory = "sct_jukeboxes";
@@ -76,11 +76,11 @@ class CLASS_JUKEBOX_OBJECT: Land_FMradio_F {
       statement = "";
       selection = "pelvis";
 
-      class GVAR_CORE(pickup) {
-        displayName = "$STR_sct_jukebox_interaction_pickup";
+      class RGVAR(pickup) {
+        displayName = RCSTRING(interaction_pickup);
         condition = QUOTE(alive _target);
         statement = QUOTE(CALL2(FUNC(actionPickup),_target,_player));
-        icon = QPATHTO(data\ui\icon_jukebox.paa);
+        icon = QPATHTO(data\ui\icon_jukebox_ca.paa);
       };
 
       #include "ace_actions_jukebox.hpp"
