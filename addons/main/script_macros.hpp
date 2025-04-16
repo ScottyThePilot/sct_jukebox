@@ -86,9 +86,9 @@
 
 // parent function - PREFIX_SUPCOMPONENT_fnc_{var1}
 #ifdef SUPCOMPONENT
-  #define PFUNC(var1) TRIPLES(PREFIX,fnc,var1)
-  #define QPFUNC(var1) QUOTE(PFUNC(var1))
-  #define QQPFUNC(var1) QUOTE(QPFUNC(var1))
+  #define PFUNC(var1) EFUNC(SUPCOMPONENT,var1)
+  #define QPFUNC(var1) QEFUNC(SUPCOMPONENT,var1)
+  #define QQPFUNC(var1) QQEFUNC(SUPCOMPONENT,var1)
 #endif
 
 // external function - PREFIX_{var1}_fnc_{var2}
