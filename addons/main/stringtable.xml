@@ -5,6 +5,26 @@
       <Original>Music Players</Original>
       <English>Music Players</English>
     </Key>
+    <Key ID="STR_sct_jukebox_editorAttributes">
+      <Original>Music Player Options</Original>
+      <English>Music Player Options</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_editorAttribute_startInstalled_displayName">
+      <Original>Start Installed</Original>
+      <English>Start Installed</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_editorAttribute_startInstalled_tooltip">
+      <Original>This object will start with a music player installed (may not work for some objects)</Original>
+      <English>This object will start with a music player installed (may not work for some objects)</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_editorAttribute_canInstall_displayName">
+      <Original>Allow Installation/Uninstallation</Original>
+      <English>Allow Installation/Uninstallation</English>
+    </Key>
+    <Key ID="STR_sct_jukebox_editorAttribute_canInstall_tooltip">
+      <Original>Disabling this will prevent players from installing music players in, or uninstalling them from, this object</Original>
+      <English>Disabling this will prevent players from installing music players in, or uninstalling them from, this object</English>
+    </Key>
     <Key ID="STR_sct_jukebox_displayName">
       <Original>Portable Music Player</Original>
       <English>Portable Music Player</English>

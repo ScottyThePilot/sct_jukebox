@@ -108,4 +108,8 @@ class CfgEditorSubcategories {
   };
 };
 
+class Cfg3DEN {
+  #include "Cfg3DEN.hpp"
+};
+
 class CLASS_JUKEBOX_CATEGORIES {};

@@ -13,3 +13,7 @@ exclude = [
   "**/CfgVehicles.hpp",
   "**/CfgWeapons.hpp",
 ]
+
+[hemtt.release]
+sign = true
+archive = false
