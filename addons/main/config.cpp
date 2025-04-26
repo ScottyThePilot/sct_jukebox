@@ -12,6 +12,7 @@ class CfgPatches {
       "A3_Structures_F_Items_Electronics",
       "cba_common",
       "ace_common",
+      "ace_interact_menu",
       "ace_interaction"
     };
     units[] = {
