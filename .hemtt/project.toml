@@ -10,6 +10,7 @@ git_hash = 0
 exclude = [
   "**/ace_actions_jukebox_vehicle.hpp",
   "**/ace_actions_jukebox.hpp",
+  "**/Cfg3DEN.hpp",
   "**/CfgVehicles.hpp",
   "**/CfgWeapons.hpp",
 ]

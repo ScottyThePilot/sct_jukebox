@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include ".\script_component.hpp"
 
 [
   QVAR_SOUND_DISTANCE,

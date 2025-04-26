@@ -1,8 +1,8 @@
-#include "..\script_component.hpp"
+#include ".\script_component.hpp"
 
 [QGVAR(objectSoundEnd), {
   params ["_target", "_cancelled", "_args"];
-  if (!_cancelled && { _target isKindOf QCLASS_JUKEBOX_OBJECT || HAS_SPEAKER(_target) }) then {
+  if (!_cancelled && { HAS_SPEAKER(_target) }) then {
     [_target, objNull] call FUNC(onSkip);
   };
 }] call CBA_fnc_addEventHandler;

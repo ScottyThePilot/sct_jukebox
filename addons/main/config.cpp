@@ -55,10 +55,7 @@ class CfgFunctions {
       class getTrackCategories {};
       class getTracksMap {};
       class hasSpeaker {};
-      class initPost {};
-      class initPostClient {};
-      class initPostServer {};
-      class initSettings {};
+      class hasSpeakerOn {};
       class inspect {};
       class notify {};
       class notifyRemote {};
@@ -76,21 +73,16 @@ class CfgFunctions {
       class onStop {};
       class onVehicleInstall {};
       class onVehicleUninstall {};
+      class setupJukebox {};
     };
   };
 };
 
 class Extended_PreInit_EventHandlers {
   class ADDON {
-    init = QUOTE(call FUNC(initSettings));
-  };
-};
-
-class Extended_PostInit_EventHandlers {
-  class ADDON {
-    init = QUOTE(call FUNC(initPost));
-    clientInit = QUOTE(call FUNC(initPostClient));
-    serverInit = QUOTE(call FUNC(initPostServer));
+    init = QUOTE(call compileScript ['PATHTO(XEH_preInit.sqf)']);
+    clientInit = QUOTE(call compileScript ['PATHTO(XEH_preInitClient.sqf)']);
+    serverInit = QUOTE(call compileScript ['PATHTO(XEH_preInitServer.sqf)']);
   };
 };
 

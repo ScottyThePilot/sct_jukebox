@@ -6,7 +6,7 @@
 // Otherwise, returns `objNull`
 params ["_target"];
 
-if (_target isKindOf QCLASS_JUKEBOX_OBJECT) exitWith { _target };
+if (typeOf _target isEqualTo QCLASS_JUKEBOX_OBJECT) exitWith { _target };
 if (IS_INSTALLED(_target)) exitWith { _target };
 
 private _attachedObjects = attachedObjects _target;

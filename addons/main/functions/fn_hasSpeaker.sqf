@@ -2,6 +2,4 @@
 
 params ["_target"];
 
-IS_INSTALLED(_target) || {
-  (attachedObjects _target) findIf { typeOf _x isEqualTo QCLASS_JUKEBOX_OBJECT } isNotEqualTo -1
-}
+typeOf _target isEqualTo QCLASS_JUKEBOX_OBJECT || HAS_SPEAKER_ON(_target)

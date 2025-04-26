@@ -1,7 +1,7 @@
 class ACE_SelfActions {
   class RGVAR(vehicle) {
     displayName = RCSTRING(displayName);
-    condition = QUOTE(alive _target && HAS_SPEAKER(_target));
+    condition = QUOTE(alive _target && HAS_SPEAKER_ON(_target));
     exceptions[] = { "isNotInside", "isNotSitting" };
     icon = QPATHTO(data\ui\icon_jukebox_ca.paa);
 
@@ -29,7 +29,7 @@ class ACE_Actions {
 
     class RGVAR(vehicle) {
       displayName = RCSTRING(displayName);
-      condition = QUOTE(alive _target && HAS_SPEAKER(_target));
+      condition = QUOTE(alive _target && HAS_SPEAKER_ON(_target));
       exceptions[] = { "isNotInside", "isNotSitting" };
       icon = QPATHTO(data\ui\icon_jukebox_ca.paa);
 

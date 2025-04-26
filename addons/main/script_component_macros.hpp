@@ -60,6 +60,7 @@
 #define SET_QUEUE_LIST(var1,var2) SETVARGLOBAL(var1,VAR_QUEUE_LIST,var2)
 #define HAS_JUKEBOX_ITEM(var1) CALL2(ace_common_fnc_hasItem,var1,'CLASS_JUKEBOX_ITEM')
 #define HAS_SPEAKER(var1) CALL1(EFUNC(main,hasSpeaker),var1)
+#define HAS_SPEAKER_ON(var1) CALL1(EFUNC(main,hasSpeakerOn),var1)
 #define GET_SPEAKER(var1) CALL1(EFUNC(main,getSpeaker),var1)
 #define GET_TRACK_CATEGORIES GET_CACHED(VAR_TRACK_CATEGORIES,EFUNC(main,getTrackCategories))
 #define RESET_TRACK_CATEGORIES RESET_CACHED(VAR_TRACK_CATEGORIES)

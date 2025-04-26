@@ -42,7 +42,7 @@ class CAManBase: Man {
 
       class RGVAR(personal) {
         displayName = RCSTRING(displayName);
-        condition = QUOTE(HAS_SPEAKER(_target));
+        condition = QUOTE(HAS_SPEAKER_ON(_target));
         exceptions[] = { "isNotInside", "isNotSitting" };
         icon = QPATHTO(data\ui\icon_jukebox_ca.paa);
 

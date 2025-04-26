@@ -68,3 +68,22 @@ class CfgSounds {
   };
 };
 ```
+
+## Utilities
+
+If you are a mission maker and would like to make a music player play a track or
+tracks on mission start, you can use the `sct_jukebox_main_fnc_setupJukebox` helper
+function, and run it from the object's init field.
+
+```sqf
+[
+  // the music player object, or object with a music player installed/attached
+  this,
+  // whether the music player should start the mission playing or not
+  true,
+  // whether the music player should have repeat enabled
+  true,
+  // the queue list of the music player, must be ids to valid sounds from CfgSounds
+  ["sct_jukebox_music_AmbientTrack01_F"]
+] call sct_jukebox_main_fnc_setupJukebox;
+```
