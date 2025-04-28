@@ -81,9 +81,9 @@ class CfgFunctions {
 
 class Extended_PreInit_EventHandlers {
   class ADDON {
-    init = QUOTE(call compileScript ['PATHTO(XEH_preInit.sqf)']);
-    clientInit = QUOTE(call compileScript ['PATHTO(XEH_preInitClient.sqf)']);
-    serverInit = QUOTE(call compileScript ['PATHTO(XEH_preInitServer.sqf)']);
+    init = QUOTE(call COMPILE_SCRIPT(PATHTO(XEH_preInit.sqf)));
+    clientInit = QUOTE(call COMPILE_SCRIPT(PATHTO(XEH_preInitClient.sqf)));
+    serverInit = QUOTE(call COMPILE_SCRIPT(PATHTO(XEH_preInitServer.sqf)));
   };
 };
 
