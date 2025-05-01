@@ -104,6 +104,12 @@
 #define RLSTRING(var1) QUOTE(TRIPLES(STR,PREFIX,var1))
 #define RCSTRING(var1) QUOTE(TRIPLES($STR,PREFIX,var1))
 
+// parent lang string
+#ifdef SUPCOMPONENT
+  #define PLSTRING(var1) ELSTRING(SUPCOMPONENT,var1)
+  #define PCSTRING(var1) ECSTRING(SUPCOMPONENT,var1)
+#endif
+
 // external lang string
 #define ELSTRING(var1,var2) QUOTE(TRIPLES(STR,ADDONOF(var1),var2))
 #define ECSTRING(var1,var2) QUOTE(TRIPLES($STR,ADDONOF(var1),var2))
